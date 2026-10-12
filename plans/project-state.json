@@ -1,0 +1,14 @@
+{
+  "currentSlice": {
+    "id": "S01",
+    "parent": null,
+    "status": "in-progress"
+  },
+  "documents": {
+    "roadmap": "plans/roadmap.md",
+    "readingMap": null,
+    "spec": null,
+    "plan": null,
+    "tasks": null
+  }
+}

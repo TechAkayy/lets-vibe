@@ -1,0 +1,7 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The Teekaapi site. Empty until the first slice of the roadmap builds it."
+}
