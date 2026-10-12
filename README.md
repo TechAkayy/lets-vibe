@@ -4,6 +4,8 @@ A set of agent skills for Codex and Claude that delivers work in slices. One sli
 
 This repository is a small pnpm workspace with the skills installed and a sample project ready to build: the website of Teekaapi, a cafe in Melbourne. You can adapt the skills to your own project, or try the workflow on the sample first.
 
+![Lets Vibe wraps the Vibe skills and the Addy skills, runs a slice in one of four modes, and reads and writes the records in the plans folder](docs/overview.svg)
+
 ## Two ways to start
 
 ### A. Adapt lets-vibe to your project
