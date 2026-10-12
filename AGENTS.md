@@ -4,7 +4,7 @@ When the user replies "cool" to a recommendation, treat it as approval to apply 
 
 ## Scope and context
 
-This repository is a pnpm workspace that holds a sample project. Product code is in `packages/`, one folder for each package: `packages/app` holds the website of Teekaapi, a cafe in Melbourne, which the [roadmap](plans/roadmap.md) delivers from the [site brief](plans/teekaapi-brief.md). The agent skills and their tooling are in `tooling/agents`. When you use this kit for your own project, replace this paragraph with a description of that project: what it is, which packages or folders it has, which of them a change may touch, and where one-off tooling goes.
+This repository is a pnpm workspace that holds a sample project. Product code is in `packages/`, one folder for each package: `packages/app` holds the website of Teekaapi, a cafe in Melbourne, which the [roadmap](plans/roadmap.md) describes in its site brief and delivers in slices. The agent skills and their tooling are in `tooling/agents`. When you use this kit for your own project, replace this paragraph with a description of that project: what it is, which packages or folders it has, which of them a change may touch, and where one-off tooling goes.
 
 Keep plans and research in `plans/`. Read the plans and implementation relevant to the current task. The user's current instructions take precedence over older plan or workflow wording.
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="retro-source-sha256" content="4f2f462c9760fedb11af08cbb65ac525e0c3c059e57c75720670252ee3a8478b">
+  <meta name="retro-source-sha256" content="a3209252ef554a66de5a9f4a61e77d567ef179301e22dd1b0314da604fd5ca78">
   <title>Teekaapi site roadmap</title>
   <style>
 :root {
@@ -182,7 +182,7 @@ figcaption { margin-top: 12px; color: var(--muted); font-size: 19.5px; text-alig
     <div class="report-header-inner">
       <p class="eyebrow">Derived review view</p>
       <h1 id="teekaapi-site-roadmap">Teekaapi site roadmap</h1>
-      <p class="header-meta">Markdown controls this pair. sha256 <code>4f2f462c9760fedb11af08cbb65ac525e0c3c059e57c75720670252ee3a8478b</code></p>
+      <p class="header-meta">Markdown controls this pair. sha256 <code>a3209252ef554a66de5a9f4a61e77d567ef179301e22dd1b0314da604fd5ca78</code></p>
       <button class="toc-toggle" type="button" aria-expanded="true" aria-controls="contents">Hide contents</button>
     </div>
   </header>
@@ -190,6 +190,18 @@ figcaption { margin-top: 12px; color: var(--muted); font-size: 19.5px; text-alig
     <nav class="desktop-toc" id="contents" aria-label="Contents">
       <h2>Contents</h2>
 <ol class="toc-level toc-level-1">
+<li class="toc-group">
+<a class="toc-link toc-level-1-link" href="#site-brief"><span class="toc-index"></span><span class="toc-label">Site brief</span></a>
+<ol class="toc-level toc-level-2">
+<li><a class="toc-link toc-level-2-link" href="#design-concept"><span class="toc-index"></span><span class="toc-label">Design concept</span></a></li>
+<li><a class="toc-link toc-level-2-link" href="#color-palette"><span class="toc-index"></span><span class="toc-label">Color palette</span></a></li>
+<li><a class="toc-link toc-level-2-link" href="#typography"><span class="toc-index"></span><span class="toc-label">Typography</span></a></li>
+<li><a class="toc-link toc-level-2-link" href="#structure"><span class="toc-index"></span><span class="toc-label">Structure</span></a></li>
+<li><a class="toc-link toc-level-2-link" href="#images"><span class="toc-index"></span><span class="toc-label">Images</span></a></li>
+<li><a class="toc-link toc-level-2-link" href="#interactions"><span class="toc-index"></span><span class="toc-label">Interactions</span></a></li>
+<li><a class="toc-link toc-level-2-link" href="#theme"><span class="toc-index"></span><span class="toc-label">Theme</span></a></li>
+</ol>
+</li>
 <li class="toc-group">
 <a class="toc-link toc-level-1-link" href="#1-implementation-approach"><span class="toc-index">1</span><span class="toc-label">Implementation approach</span></a>
 </li>
@@ -212,6 +224,18 @@ figcaption { margin-top: 12px; color: var(--muted); font-size: 19.5px; text-alig
         <h2>Contents</h2>
 <ol class="toc-level toc-level-1">
 <li class="toc-group">
+<a class="toc-link toc-level-1-link" href="#site-brief"><span class="toc-index"></span><span class="toc-label">Site brief</span></a>
+<ol class="toc-level toc-level-2">
+<li><a class="toc-link toc-level-2-link" href="#design-concept"><span class="toc-index"></span><span class="toc-label">Design concept</span></a></li>
+<li><a class="toc-link toc-level-2-link" href="#color-palette"><span class="toc-index"></span><span class="toc-label">Color palette</span></a></li>
+<li><a class="toc-link toc-level-2-link" href="#typography"><span class="toc-index"></span><span class="toc-label">Typography</span></a></li>
+<li><a class="toc-link toc-level-2-link" href="#structure"><span class="toc-index"></span><span class="toc-label">Structure</span></a></li>
+<li><a class="toc-link toc-level-2-link" href="#images"><span class="toc-index"></span><span class="toc-label">Images</span></a></li>
+<li><a class="toc-link toc-level-2-link" href="#interactions"><span class="toc-index"></span><span class="toc-label">Interactions</span></a></li>
+<li><a class="toc-link toc-level-2-link" href="#theme"><span class="toc-index"></span><span class="toc-label">Theme</span></a></li>
+</ol>
+</li>
+<li class="toc-group">
 <a class="toc-link toc-level-1-link" href="#1-implementation-approach"><span class="toc-index">1</span><span class="toc-label">Implementation approach</span></a>
 </li>
 <li class="toc-group">
@@ -229,8 +253,160 @@ figcaption { margin-top: 12px; color: var(--muted); font-size: 19.5px; text-alig
 </ol>
       </nav>
 <p><strong>Delivery state:</strong> No slice is closed. S01 is selected in the <a href="project-state.json">project pointer</a> and has not started.</p>
-<p>Teekaapi is a next-generation cafe in Melbourne. This roadmap delivers its website from the <a href="teekaapi-brief.md">site brief</a>. The brief owns the design concept, the colours, the typography, the page structure, the image rules and the interactions. This roadmap owns the order of delivery and the acceptance of each slice.</p>
-<p>This is the sample project of the Lets Vibe kit. When you use the kit for your own project, replace this roadmap, the brief and the project pointer.</p>
+<p>Teekaapi is a next-generation cafe in Melbourne. This roadmap delivers its website. The <a href="#site-brief">site brief</a> below owns the design concept, the colours, the typography, the page structure, the image rules and the interactions. The numbered sections own the order of delivery and the acceptance of each slice.</p>
+<p>This is the sample project of the Lets Vibe kit. When you use the kit for your own project, replace the brief and the slices with your own, and point the project pointer at your first slice.</p>
+<section class="report-section" id="site-brief-section">
+<h2 id="site-brief">Site brief</h2>
+<p>Teekaapi.com is a stylish next‑gen cafe in Melbourne serving specialty coffee and a unique fusion‑food menu, presented through a playful yet premium neo‑retro digital experience. The site should feel like stepping into the physical cafe: bold, welcoming, a little nostalgic, and distinctly modern.</p>
+<div class="report-subsection">
+<h3 id="design-concept">Design concept</h3>
+<p>The visual identity combines a retro analog lounge atmosphere with a clean, contemporary interface. Bold geometric shapes, curved cards, grainy gradients, and vibrant but warm colors echo latte foam, layered drinks, and fusion dishes. Motion is upbeat and cheeky—small bounces, slides, and glows that mimic the rhythm of a barista at work. This concept is chosen to set Teekaapi apart from generic cafes by leaning deeply into color, craft, and personality, communicating both high‑quality coffee and a joyful, discoverable hangout.</p>
+</div>
+<div class="report-subsection">
+<h3 id="color-palette">Color palette</h3>
+<ul>
+<li>Espresso Noir (#1B1512): Primary dark neutral used for headings, key text in light mode, and deep surfaces in dark mode. Conveys craft, depth, and seriousness about coffee.</li>
+<li>Cream Foam (#FFF5E6): Soft, warm off‑white for main light backgrounds and cards, keeping the interface inviting and easy on the eyes.</li>
+<li>Teekaapi Orange (#FF7A3C): Primary accent and CTA color for buttons, key badges, and highlights. Creates energy, appetite, and clear action emphasis.</li>
+<li>Fusion Pink (#F95E8A): Secondary accent for hover states, highlighted labels, and playful underline effects. Adds neo‑retro pop and Instagram‑worthy vibrancy.</li>
+<li>Mint Kulfi (#7BE0C3): Tertiary accent for status chips (“New”, “Seasonal”), subtle gradients, and focus indicators, symbolizing freshness and the fusion twist.</li>
+<li>Filter Beige (#E2C5A3): Supporting background for alternate sections, hero overlays, and subtle stripes, inspired by crema and toasted notes.</li>
+<li>Charcoal Steam (#2A2731): Dark mode background and deep footer, with accent colors glowing softly against it.</li>
+<li>Accessibility Text Colors: Text Dark (#141414) and Text Light (#FAFAFA) ensure WCAG‑compliant contrast on all backgrounds.</li>
+</ul>
+<p>Psychological usage: Warm oranges and beiges drive comfort and appetite; vibrant pink and mint emphasize novelty and play; deep browns and charcoals anchor the brand in craftsmanship and quality.</p>
+</div>
+<div class="report-subsection">
+<h3 id="typography">Typography</h3>
+<p><strong>Headings</strong></p>
+<ul>
+<li>Font: Space Grotesk or League Spartan (geometric sans‑serif).</li>
+<li>Treatment: H1 extra‑bold with slightly negative letter‑spacing, large sizes for bold, poster‑like statements. H2/H3 semi‑bold with generous letter‑spacing and potential all‑caps for section labels. Occasional outline or duotone styling over imagery to evoke retro signage.</li>
+</ul>
+<p><strong>Body</strong></p>
+<ul>
+<li>Font: Inter or DM Sans for high readability.</li>
+<li>Treatment: Regular weight paragraphs with 1.5–1.7 line height, slightly increased letter‑spacing on smaller text sizes. Menu items use slightly larger body size with classic dotted leader lines between dish names and prices for a menu‑like aesthetic.</li>
+</ul>
+<p><strong>Accent / Script (sparingly)</strong></p>
+<ul>
+<li>Font: Pacifico or Dancing Script for small flourishes such as “Melbourne brewed” or “Chef’s pick,” echoing chalkboard handwriting without overwhelming the main typography.</li>
+</ul>
+</div>
+<div class="report-subsection">
+<h3 id="structure">Structure</h3>
+<p>A mobile‑first, component‑driven, fully responsive site with clear, appetizing storytelling and fast access to practical information.</p>
+<p><strong>1. Home / Landing</strong></p>
+<ul>
+<li>Hero section with a full‑bleed barista/coffee image and gradient overlay, bold headline, short supporting copy, primary CTA (“View Menu”) and secondary CTA (“Book a Table” / “Order Now”).</li>
+<li>Quick Highlights strip featuring 3–4 icon cards (Specialty Coffee, Fusion Bites, Open Late, Melbourne CBD).</li>
+<li>Signature Drinks carousel showing key espresso drinks and unique coffee creations, horizontally scrollable on mobile and grid‑based on desktop.</li>
+<li>Fusion Food teaser with side‑by‑side layout: strong food photography and 3–5 highlighted dishes with playful descriptions.</li>
+<li>Social / UGC band with a row of Instagram‑style images, light hover overlays, and a hashtag (e.g., #teekaapimoments).</li>
+</ul>
+<p><strong>2. Menu</strong></p>
+<ul>
+<li>Segmented controls or tabs for “Coffee”, “Cold Brew &amp; Specials”, “Fusion Bites”, and “Desserts”.</li>
+<li>Each category section includes grouped subsections (e.g., “Classics”, “House Signatures”), listing item name, concise description, dietary icons, and price.</li>
+<li>A “Today’s Special” card anchored to the top, visually highlighted with a soft animated glow.</li>
+</ul>
+<p><strong>3. Our Story</strong></p>
+<ul>
+<li>Brand narrative that covers the origins of Teekaapi, its connection to Melbourne, and the philosophy behind its coffee and fusion approach.</li>
+<li>Timeline block with 3–4 milestones and retro‑styled icons connected by a line.</li>
+<li>Team and interior portraits with captions, emphasizing warmth, craft, and personality.</li>
+</ul>
+<p><strong>4. Gallery / Atmosphere</strong></p>
+<ul>
+<li>A visually rich gallery grid or masonry layout mixing coffee close‑ups, fusion dishes, interior ambience, and candid guest moments.</li>
+<li>Hover or tap overlays reveal dish names, short descriptions, or context (e.g., “Barista station”, “Signature fusion bowl”).</li>
+<li>Optional filters (Coffee / Food / Space / People) for browsing.</li>
+</ul>
+<p><strong>5. Visit Us</strong></p>
+<ul>
+<li>Key visit information: address, hours, contact methods, link to directions.</li>
+<li>Embedded map with a custom Teekaapi marker icon.</li>
+<li>Brief notes on parking, public transport, and nearby landmarks.</li>
+<li>Clear action buttons: “Get Directions”, “Call”, and “Add to Calendar.”</li>
+</ul>
+<p><strong>6. Order / Book (optional dedicated page or modal)</strong></p>
+<ul>
+<li>Explanation of available services (pickup, dine‑in reservation, catering if relevant).</li>
+<li>Simple, step‑by‑step layout: choose date/time, select service, confirm.</li>
+<li>Prominent CTAs integrated with third‑party platforms if used, maintaining Teekaapi brand styling.</li>
+</ul>
+<p><strong>7. Footer</strong></p>
+<ul>
+<li>Dark footer using Charcoal Steam, featuring a compact logo lockup, navigation links, social media icons, and a newsletter signup field.</li>
+<li>Tagline reinforcing Teekaapi’s core promise (e.g., “Coffee, fusion, and a little rule‑breaking.”).</li>
+</ul>
+</div>
+<div class="report-subsection">
+<h3 id="images">Images</h3>
+<p><strong>Coffee Imagery</strong></p>
+<ul>
+<li>Macro and close‑up shots of espresso extractions, latte art pours, and specialty drinks.</li>
+<li>Warm, slightly desaturated color grading with subtle grain for a retro‑film aesthetic.</li>
+<li>Circular or rounded‑rectangle crops echoing geometric UI elements.</li>
+</ul>
+<p><strong>Fusion Food</strong></p>
+<ul>
+<li>Overhead and 45° shots showing vibrant dishes with interesting plating.</li>
+<li>Neutral backgrounds so the food color remains the hero, supported by brand accent colors in napkins, plates, or props.</li>
+</ul>
+<p><strong>Interior &amp; Ambience</strong></p>
+<ul>
+<li>Wide shots of the cafe showing seating, lighting, and signage.</li>
+<li>Moments of people working, chatting, and enjoying drinks to communicate atmosphere.</li>
+<li>Occasional blur/motion to suggest liveliness.</li>
+</ul>
+<p><strong>Treatments &amp; Readability</strong></p>
+<ul>
+<li>Grain overlays and soft halftone textures on hero and key section images.</li>
+<li>Asymmetrical borders and offset drop‑shadows in Teekaapi Orange or Mint Kulfi behind images.</li>
+<li>All section background images must preserve text readability using dim overlays, gradient fades, or prominent text containers with sufficient contrast and padding.</li>
+</ul>
+<p><strong>Brand Consistency</strong></p>
+<ul>
+<li>Only imagery related to the Teekaapi coffee and fusion cafe experience: signature drinks, dishes, ingredients, barista work, and interior ambience featuring Teekaapi branding.</li>
+</ul>
+</div>
+<div class="report-subsection">
+<h3 id="interactions">Interactions</h3>
+<p><strong>Micro‑interactions</strong></p>
+<ul>
+<li>Buttons gently scale up and transition to a gradient state on hover, with clear focus rings for keyboard users.</li>
+<li>Cards (menu items, highlights) lift slightly with a shadow and underline animation on hover.</li>
+<li>Icons and small labels can perform subtle bounce or wiggle animations on first interaction.</li>
+</ul>
+<p><strong>Page and Section Transitions</strong></p>
+<ul>
+<li>Smooth fade and slide‑up animations for sections as they enter the viewport, slightly staggered for card collections.</li>
+<li>Transitions kept short (150–250ms) to maintain responsiveness and reduce motion sickness.</li>
+</ul>
+<p><strong>Scroll Effects</strong></p>
+<ul>
+<li>Light parallax movement for background shapes in the hero and key feature sections.</li>
+<li>Sticky sub‑navigation on the Menu page for quick access to each category during vertical scroll.</li>
+</ul>
+<p><strong>Dark Mode</strong></p>
+<ul>
+<li>Entire color system switches to dark surfaces (Charcoal Steam, Espresso Noir) with brighter, more saturated accents for legibility.</li>
+<li>Shadows soften into glows for key cards and buttons.</li>
+<li>Images adjust via overlays to retain clarity without glaring brightness.</li>
+</ul>
+<p><strong>Accessibility &amp; Preferences</strong></p>
+<ul>
+<li>All text and interactive components respect WCAG contrast guidelines in both light and dark modes.</li>
+<li>Motion reduced in accordance with <code>prefers-reduced-motion</code>, disabling nonessential animations.</li>
+<li>Clear focus states and logical tab order across all navigation and interactive elements.</li>
+</ul>
+</div>
+<div class="report-subsection">
+<h3 id="theme">Theme</h3>
+<p>Configure the Tailwind theme with the project's colors and fonts.</p>
+</div>
+</section>
 <section class="report-section" id="1-implementation-approach-section">
 <h2 id="1-implementation-approach">1. Implementation approach</h2>
 <ul>
@@ -281,7 +457,7 @@ pnpm roadmap
 pnpm roadmap:check
 
 </code></pre>
-<p>Keep the four sections. A new slice gets its row at its place in the order of delivery. The project pointer owns the selection of the current slice; this roadmap does not start a slice, and it records no task, no commit and no evidence of a slice that has not run.</p>
+<p>Keep the brief at the top and the four numbered sections. A new slice gets its row at its place in the order of delivery. The project pointer owns the selection of the current slice; this roadmap does not start a slice, and it records no task, no commit and no evidence of a slice that has not run.</p>
 </section>
     </main>
   </div>
