@@ -119,7 +119,7 @@ plans/<slice-id>/tasks/progress.md   generated from todo.md
 
 Without a word for the mode, the execution mode is copilot: the agent works through a deliverable and stops for your review before each commit. The [execution-mode rules](tooling/agents/plugins/vibe/skills/lets-vibe/references/contract-core.md#execution-modes) describe the four modes.
 
-**Orchestrated mode needs the right application.** In that mode one session starts and steers another, so the application must let a session start a separate top-level conversation, set its model and permissions, and send it messages; [the host](tooling/agents/plugins/vibe/skills/lets-vibe/references/orchestration.md#the-host) gives the full list. Use T3 Code (Nightly), version `0.0.46-nightly.20261010` or later; that is the version it was run on. The other three modes work in any Claude or Codex session.
+**Orchestrated mode needs an application that can start a session.** In that mode one session starts and steers another, so the application must let a session start a separate top-level conversation, set its model and permissions, and send it messages; [the host](tooling/agents/plugins/vibe/skills/lets-vibe/references/orchestration.md#the-host) gives the full list. It has run in the Codex desktop app, in the Claude Code desktop app and in T3 Code. The other three modes work in any Claude or Codex session.
 
 When the first slice has started, add the freshness check of the saved report to the `check` script of the root `package.json` and to your CI job:
 

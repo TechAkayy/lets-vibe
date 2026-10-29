@@ -44,7 +44,7 @@ rect { stroke-width: 0.5; }
 <g class="gray">
 <rect x="492" y="108" width="128" height="56" rx="8"/>
 <text class="th mid" x="556" y="127">Orchestrated</text>
-<text class="ts mid" x="556" y="146">T3 Code</text>
+<text class="ts mid" x="556" y="146">Steers a developer</text>
 </g>
 <g class="teal">
 <rect x="60" y="188" width="250" height="130" rx="12"/>

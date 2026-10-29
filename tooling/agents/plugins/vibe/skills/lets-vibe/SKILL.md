@@ -19,7 +19,7 @@ For new work, follow the [slice-selection and preparation rules](references/fres
 
 A bare invocation starts scope discovery for a new slice or resumes already approved work. It does not select autonomous or orchestrated mode or release an outstanding review checkpoint. Reuse scope approval already given; otherwise present the proposed scope before implementation.
 
-State the slice ID and name, intended outcome, exclusions, coherent deliverables, acceptance criteria, relevant inputs and verification. Link existing planning records instead of copying them. Ask only about consequential choices the available context does not resolve.
+State the slice ID and name, intended outcome under [Step 2](references/fresh-slice-delivery.md#step-2--accepted-inputs-and-semantic-baseline), exclusions, coherent deliverables, acceptance criteria, relevant inputs and verification. Link existing planning records instead of copying them. Ask only about consequential choices the available context does not resolve.
 
 Follow [slice-document reuse](references/requirements-alignment.md#reuse-the-slice-documents) to identify the selected documents or existing task record and carry their exact paths through delivery. Those records hold the slice context and completion notes; no additional slice record is required.
 
@@ -71,7 +71,7 @@ If no method is relevant, proceed without one. If a selected method is unavailab
 
 Follow [narration guidance](references/narration.md) for the requested communication density and complete readiness-checkpoint reports.
 
-Use the [progress-report skill](../progress-report/SKILL.md) with [delivery progress rules](references/progress.md) after each completed delivery step, at other meaningful transitions and on request. Pass the actual slice plan and current facts; it needs no separate user invocation during this run. Keep the complete report in the agreed generated document, with short linked conversation updates, under those rules. Create the report at the plan step so that the slice start already has it, write it in Simplified Technical English, keep the in-progress state true and divide a task that grows too large; the delivery progress rules own each of these. Preserve completed work, current action, remaining work, blockers and the next review checkpoint or terminal stop.
+Use the [progress-report skill](../progress-report/SKILL.md) with [delivery progress rules](references/progress.md) after each completed delivery step, at other meaningful transitions and on request. Pass the actual slice plan and current facts; it needs no separate user invocation during this run. Keep the complete report in the agreed generated document, with short linked conversation updates, under those rules. Create the report at the plan step so that the slice start already has it, write it in Simplified Technical English, keep the in-progress state true and diagnose a task that grows or stalls before dividing it; the delivery progress rules own each of these. Preserve completed work, current action, remaining work, blockers and the next review checkpoint or terminal stop.
 
 Reconcile each task’s structured treatment when its decision, evidence, review or pause state changes, following [reporting transitions](references/progress.md#reporting-transitions). Record resolved non-implementation decisions promptly and keep unresolved acceptance visible.
 

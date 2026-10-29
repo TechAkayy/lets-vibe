@@ -36,6 +36,8 @@ These are slice-selection choices. All use this same delivery procedure and the 
 
 Read the selected slice’s roadmap entry, or the parent’s entry for a proposed sub-slice, together with relevant Addy spec/task files, requirements, architecture, decisions, existing implementation and user steering. For newly requested top-level work with no entry yet, use the user's request and relevant existing project context as the initial baseline. Establish the outcome, exclusions, acceptance and dependencies. Distinguish accepted requirements from research suggestions and historical observations. Complete the [foundation and peer preparation](addy-method-gates.md#foundation-and-peer-preparation) before dependent recommendations.
 
+Frame the accepted outcome in its existing scope record: who uses the result, what limitation exists now, what observable improvement this work delivers, and how acceptance demonstrates it. For foundational work, name the consuming system and the invariant or capability it gains. Link existing acceptance instead of creating another goal document or enlarging the agreed scope.
+
 For a new sub-slice, establish its additional outcome, boundaries, acceptance criteria and dependencies from the user's request. Preserve the parent's completed status and historical acceptance; the child has its own scope and completion. Agree its position relative to the next planned slice, including whether that slice now depends on the new work.
 
 Use source material as evidence within its approved scope. A reference to another repository does not authorize copying its files. Resolve material contradictions before implementation; do not invent missing acceptance criteria or expand scope through documentation wording.
@@ -47,6 +49,12 @@ Establish the owning documents under [slice-document reuse](requirements-alignme
 ## Step 3 — Scope and deliverables
 
 Organize the slice into coherent deliverables in dependency order. An owner is a delivered result, not an agent role. For each deliverable, establish its outcome, boundaries, dependencies, acceptance and relevant verification. Include documentation and recovery needs when the change warrants them.
+
+Where the outcome depends on an unproven provider, runtime, host or integration capability, schedule the smallest meaningful proof before substantial dependent implementation. Reuse sufficient current evidence. Choose a focused check that exercises the relevant boundary; a live check is needed only when the question requires it and authorization covers it. A missing capability blocks dependent work only. This changes work order, not acceptance or approval boundaries.
+
+Before adding a material service, store, protocol, lifecycle or compatibility layer, or verification machinery, explain in the existing plan which accepted requirement or concrete concern needs it, why existing owners and checks are insufficient, and its ongoing cost. Apply this to substantial mechanisms, not each function or test. Unrequested future capabilities do not justify extra machinery.
+
+Prove behavior under the repository's [verification](../../../../../../../AGENTS.md#verification-and-review) and [record](../../../../../../../AGENTS.md#records) rules: the existing owner and its retained tests first, no acceptance on disposable synthetic proof alone, a one-time diagnostic kept small and not made permanent, and no further verification once the applicable requirements and concrete concerns are covered. These are decisions within the existing assignment, not new forms or per-test approval gates.
 
 Avoid artificial owners for process narration or trivial corrections. Adjust boundaries when evidence supports a better organization, making consequential scope changes visible.
 
@@ -92,7 +100,7 @@ For each agreed deliverable:
 
 Apply the [execution-mode rules](contract-core.md#execution-modes) and the repository’s review rules at the presentation and commit actions above. Do not add routine post-commit approval pauses unless requested.
 
-Before the work on a task or sub-task starts, set it IN PROGRESS and regenerate the report. When you stop an unfinished task, put it on hold with the thing that holds it. Divide a task that grows too large. The [in-progress](progress.md#keep-the-in-progress-state-true) and [task size](progress.md#task-size-and-breakdown) rules own the detail.
+Before the work on a task or sub-task starts, set it IN PROGRESS and regenerate the report. When you stop an unfinished task, put it on hold with the thing that holds it. Diagnose a task that grows or stalls before dividing it. The [in-progress](progress.md#keep-the-in-progress-state-true) and [task size](progress.md#task-size-and-breakdown) rules own the detail.
 
 Before a deliverable is committed, its corrections remain part of that result. After accepted commits, use truthful correction commits when needed; do not rewrite accepted history merely to hide the correction process.
 
@@ -100,7 +108,7 @@ Before a deliverable is committed, its corrections remain part of that result. A
 
 Use this step when user steering, implementation discoveries, failed checks or confirmed review findings require correction. It can occur during the deliverable loop, verification, review or preparation for closure; it is not compulsory work when nothing needs correction.
 
-Verify the issue, identify the responsible component and correct the accepted behavior. Make scope or acceptance changes explicit before dependent work. Preserve review findings until each is resolved, explicitly deferred by the user or shown not to apply.
+Verify the issue against current code, accepted expectations and evidence. For a review finding, apply [Review Vibe's finding rules](../../review-vibe/SKILL.md#findings-and-handoff); a reviewer's confidence or a logically possible scenario is not sufficient evidence. For a supported issue, identify the responsible component and choose the simplest structurally sound correction that restores accepted behavior. Assess the proposed fix's cost and regression risk; confirming the problem does not validate the suggested design. Make scope or acceptance changes explicit before dependent work. Preserve review findings until each is resolved, explicitly deferred by the user or shown not to apply.
 
 When the cause affects a shared contract or repeated implementation, inspect the directly affected consumers and correct confirmed in-scope instances together. Keep broader investigation tied to that cause.
 
@@ -128,7 +136,7 @@ Apply Lets Vibe's [independent-assessment defaults and user overrides](../SKILL.
 
 Give an authorized reviewer the agreed scope and acceptance, the actual candidate, relevant changes and consumers, executed verification, known findings and limitations. Independent testing should address meaningful uncovered behavior or risk, not repeat checks merely to demonstrate independence.
 
-Keep findings specific: location, observed problem, impact and required outcome. Distinguish confirmed defects from suggestions and uncertainties. Review evidence belongs to the reviewer who produced it; do not invent sign-off.
+Apply [Review Vibe's finding rules](../../review-vibe/SKILL.md#findings-and-handoff), keeping confirmed defects, required evidence gaps, suggestions and uncertainties distinct. Review evidence belongs to the reviewer who produced it; do not invent sign-off.
 
 Correct confirmed in-scope issues through Step 7, then reassess affected verification and review. If the user accepts a limitation or elects to proceed without another independent pass, record that decision truthfully rather than relabeling a previous finding as a reviewer pass.
 
